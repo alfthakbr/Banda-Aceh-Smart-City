@@ -101,13 +101,13 @@ body {
 			border: none;
 			font-size: 16px;
 			font-weight: bold;
-			background-color: rgba(255, 255, 255, .15);
+			background-color: rgba(255, 255, 255, .25);
 			backdrop-filter: blur(2px);
 			transition: .3s;
 		}
 		.secondary-btn a:hover {
 			transform: translateY(3px);
-			background-color: rgba(0, 0, 0, .15);
+			background-color: rgba(0, 0, 0, .25);
 			color: #fff;
 		}
 	/* UPDATE BUTTON */
@@ -448,7 +448,7 @@ body {
 				padding: 0;
 			}
 			#landing .isometric #pin {
-				margin: 0 0 0 7px;
+				margin: 0;
 			}
 			#landing .isometric .svg-img {
 				position: absolute; 
@@ -493,9 +493,43 @@ body {
 			}
 
 		/* UPDATE */
-			#update .second-col-card {
-				padding: 1.5rem 0;
+			#update .card-update {
+				padding: 20px 40px;
 			}
+			#update .card-update .new {
+				font-size: 12px;
+			}
+			#update .card-update .date {
+				font-size: 12px;
+			}
+			#update .card-update .title {
+				font-size: 20px;
+			}
+			#update .card-update .info {
+				font-size: 12px;
+			}
+			/* SECOND */
+				#update .second-col-card {
+					padding: 1.5rem 0;
+				}
+				#update .card-update-second {
+					padding: 20px 20px;
+				}
+				#update .card-update-second .title {
+			    font-size: 14px;
+			    line-height: 1.1;
+				}
+				#update .card-update-second .date {
+					font-size: 10px;
+				}
+				#update .card-update-second .info {
+			    padding: 8px 0 0;
+			    font-size: 10px;
+			    line-height: 1.1;
+				}
+				#update .more-card {
+					padding: 10px 15px;
+				}
 
 		/* GLOBAL HEADING */
 			h2 {
@@ -520,6 +554,27 @@ body {
 					padding: 10px 18px;
 					font-size: 14px;
 				}
+			/*UPDATE BUTTON*/
+				.update-btn {
+					text-align: center;
+				}
+				.update-btn a {
+					width: 100%;
+					margin: 26px 0 6px;
+					padding: 12px 22px;
+					font-size: 12px;
+				}
+				.second-update-btn a {
+					padding: 8px 20px;
+					font-size: 10px;
+				}
+				.btn-more a {
+					padding: 10px 22px;
+					font-size: 10px;
+				}
+
+				
+
 	}
 
 	/* Small devices (landscape phones, 576px and up)*/
