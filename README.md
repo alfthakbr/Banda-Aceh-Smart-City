@@ -1,4 +1,4 @@
 # Smart-City-Banda-Aceh
-web Portal smart city kota banda aceh
+web Portal Banda Aceh Smart City
 
 Baru ganti repo
