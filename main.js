@@ -16,9 +16,11 @@ $(document).ready(function() {
 
 
 	$(window).scroll(function() {
-		if($(this).scrollTop() > 200) { 
+		if($(this).scrollTop() > 10) { 
 			$('.navbar').addClass('solid');
+			$('.nav-link').addClass('link-color-menu');
 		} else {
+			$('.nav-link').removeClass('link-color-menu');
 			$('.navbar').removeClass('solid');
 		}
 	});

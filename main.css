@@ -10,7 +10,85 @@
 body {
 	letter-spacing: 0px;
 	background-color: #fff;
+	overflow-x: hidden;
 }
+
+/* BLOB */
+	#landing-blob {
+	  position: absolute;
+	  width: 50%;
+	  top: 85%;
+	  z-index: -99;
+	  left: -20%;
+	  transform: rotate(30deg);
+	}
+
+	#tiny-blob {
+	  position: absolute;
+	  width: 50%;
+	  z-index: -99;
+	  left: -17%;
+	}
+
+	#tiny-blob2 {
+	  position: absolute;
+	  width: 50%;
+	  z-index: -99;
+	  right: -17%;
+	  transform: rotate(90deg);
+	}
+
+	#tiny-blob3 {
+	  position: absolute;
+	  width: 50%;
+	  z-index: -99;
+	  right: -17%;
+	  margin-top: 40%;
+	  transform: rotate(90deg);
+	}
+
+	#tiny-blob4 {
+		position: absolute;
+		width: 50%;
+	  z-index: -99;
+	  left: -26%;
+	  margin-top: 40%;
+	}
+
+
+/* COLOR PALLETE
+	Navy: #073042
+	Blue: #4285f4
+	Green: #3ddc84
+	Orange: #f86734
+	chartreuse: #eff7cf
+	blue-ish: #d6f0ff
+	Purple: ec89ff
+*/
+
+/* MATERIAL ICON */
+	@font-face {
+	  font-family: 'Material Icons';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: url(https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+	}
+
+	.material-icons {
+	  font-family: 'Material Icons';
+	  font-weight: normal;
+	  font-style: normal;
+	  font-size: 24px;
+	  line-height: 1;
+	  letter-spacing: normal;
+	  text-transform: none;
+	  display: inline-block;
+	  white-space: nowrap;
+	  word-wrap: normal;
+	  direction: ltr;
+	  -webkit-font-feature-settings: 'liga';
+	  -webkit-font-smoothing: antialiased;
+	}
 
 /* FONT-FACE */
 	@font-face {
@@ -46,6 +124,7 @@ body {
 	}
 
 /* GLOBAL BUTTON */
+
 	/* CTA BUTTON */
 		.cta-btn a {
 			color: #fff;
@@ -57,7 +136,7 @@ body {
 			font-weight: bold;
 			box-shadow: 0 5px 1px -1px lightgrey;
 			transition: 0.5s;
-			background-image: linear-gradient(-120deg, #ec89ff 0%, #b990ff 25%, #007bf6 50%, #00e3fd 100%);
+			background-image: linear-gradient(-120deg, #ec89ff 0%, #4285f4 50%, #00e3fd 100%);
 			background-size: 200% auto;
 		}
 		.cta-btn a:hover {
@@ -66,32 +145,25 @@ body {
 			box-shadow: 0 3px 1px -1px grey;
 			color: #fff;
 		}
-	/* PRIMARY BUTTON */
-		.primary-btn {
-			padding: 40px 0;
-		}
+	/* PRIMARY BUTTON */	
 		.primary-btn a {
+			width: auto;
 			color: #fff;
-			margin: 20px 0;
+			margin: 26px 0 0;
 			padding: 12px 24px;
 			border-radius: 40px;
 			border: none;
-			font-size: 18px;
+			font-size: 16px;
 			font-weight: bold;
-			box-shadow: 0 5px 1px -1px lightgrey;
-			background: linear-gradient(-120deg, #b990ff, #007bf6, #00e3fd);
+			background-color: rgb(66,133,244);
 			transition: .3s;
 		}
 		.primary-btn a:hover {
 			transform: translateY(3px);
-			background-position: right center;
-			box-shadow: 0 3px 1px -1px grey;
-			color: #fff;
+			background-color: rgb(7,48,66);
+			color: rgb(214,240,255);
 		}
 	/* SECONDARY BUTTON */
-		.secondary-btn {
-			text-align: center; 
-		}
 		.secondary-btn a {
 			width: 100%;
 			color: #fff;
@@ -107,101 +179,56 @@ body {
 		}
 		.secondary-btn a:hover {
 			transform: translateY(3px);
-			background-color: rgba(0, 0, 0, .25);
+			background-color: rgba(7,48,66, .50);
 			color: #fff;
 		}
-	/* UPDATE BUTTON */
-		/*PRIMARY*/
-			.update-btn {
-				text-align: left; 
-			}
-			.update-btn a {
-				width: auto;
-				color: #fff;
-				margin: 26px 0 0;
-				padding: 12px 24px;
-				border-radius: 40px;
-				border: none;
-				font-size: 16px;
-				font-weight: bold;
-				background-color: rgb(0, 123, 246, .90);
-				transition: .3s;
-			}
-			.update-btn a:hover {
-				transform: translateY(3px);
-				background-color: rgba(0, 0, 0, .50);
-				color: #fff;
-			}
-		/*SECONDARY*/
-			.second-update-btn {
-				text-align: left; 
-			}
-			.second-update-btn a {
-				width: auto;
-				color: #fff;
-				margin: 20px 0 0;
-				padding: 12px 24px;
-				border-radius: 40px;
-				border: none;
-				font-size: 12px;
-				font-weight: bold;
-				background-color: rgb(0, 123, 246, .90);
-				transition: .3s;
-			}
-			.second-update-btn a:hover {
-				transform: translateY(3px);
-				background-color: rgba(0, 0, 0, .50);
-				color: #fff;
-			}
-		/*MORE*/
-			.btn-more {
-				text-align: left; 
-			}
-			.btn-more a {
-				width: auto;
-				color: #fff;
-				padding: 12px 24px;
-				border-radius: 40px;
-				border: none;
-				font-size: 14px;
-				font-weight: bold;
-				background-color: rgb(0, 0, 0, .25);
-				transition: .3s;
-			}
-			.btn-more a:hover {
-				transform: translateX(5px);
-				background-color: rgba(0, 0, 0, .50);
-				color: #fff;
-			}
 
 /* HEADER */
 	#header .navbar {
 		background-color: transparent;
-		-webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+		-webkit-transition: 1s;
+    transition: 1s;
 	}
 	#header #navbarNav a {
-		width: 100%;
 		text-decoration: none;
-		border-radius: 40px;
+		width: 100%;
 		padding: 12px 24px;
-		font-size: 14px;
+		font-size: 16px;
 		font-weight: bold;
-		color: #fff;
-		background-color: rgba(0, 0, 0, .50);
 		transition: .3s;
 	}
-	#header #navbarNav a:hover {
-		background-color: rgb(0, 0, 0, .25);
-		transform: translateX(3px);
+	#header #navbarNav a::after {
+		content: '';
+		width: 0%;
+		height: 4px;
+	  display: block;
+		transition: .3s;
+		border-radius: 40px;
+	}
+	#header #navbarNav a:hover::after {
+		content: '';
+		width: 100%;
+		height: 4px;
+		background: #4285f4;
 	}
 	#header .navbar.solid {
-		background-color: rgba(255, 255, 255, .90);
+		background: #fff;
+		-webkit-box-shadow: 0px 6px 40px -12px rgba(0, 0, 0, 0.35);
+		box-shadow: 0px 6px 40px -12px rgba(0, 0, 0, 0.35);
+	}
+	#header .nav-link {
+		color: #fff;
+	}
+	#header .nav-link:hover {
+		transform: translateX(3px);
+	}
+	#header .nav-link.link-color-menu {
+		color: rgb(108, 117, 125);
 	}
 
 /* LANDING */
 	#landing {
-		padding: 80px 0;
+		padding: 80px 0 0;
 	}
 	/* FLUID LANDING */
 		#fluid {
@@ -222,7 +249,7 @@ body {
 			line-height: 1.6;
 			letter-spacing: -1.5px;
 			animation: flow 30s ease-in-out infinite;
-			background: linear-gradient(-120deg, #ec89ff, #b990ff, #007bf6, #00e3fd);
+			background: linear-gradient(-120deg, #073042, #ec89ff, #4285f4, #00e3fd);
 			background-size: 300%;
 			-webkit-background-clip: text;
 			background-clip: text;
@@ -249,7 +276,6 @@ body {
 	/* ISOMETRIC */
 		#landing .isometric #pin {
 			position: absolute;
-			margin: -7px -7px;
 			-webkit-animation: up-down 1s infinite  alternate;
 			animation: up-down 1s infinite  alternate;
 		}
@@ -269,34 +295,218 @@ body {
 				transform: translateY(-10px); 
 			}
 		}
+		/* PIN GOV */
+			#landing .isometric #pin .gov {
+				margin: 10rem 0 0 28rem;
+				cursor: pointer;
+			}
+			#landing .isometric #pin .gov {
+			  position: absolute;
+			  display: inline-block;
+			}
+			#landing .isometric #pin .gov .tooltiptext {
+			  visibility: hidden;
+			  background-color: #073042;
+			  color: #fff;
+			  text-align: center;
+			  border-radius: 12px;
+			  padding: 12px 0;
+			  width: 200px;
+			  /* Position the tooltip */
+			  position: absolute;
+			  z-index: 1;
+				right: 105%;
+			}
+			#landing .isometric #pin .gov:hover .tooltiptext {
+			  visibility: visible;
+			}
+
+		/* PIN BRANDING */
+			#landing .isometric #pin .branding {
+				margin: 5rem 0 0 13rem;
+				cursor: pointer;
+			}
+			#landing .isometric #pin .branding {
+			  position: absolute;
+			  display: inline-block;
+			}
+			#landing .isometric #pin .branding .tooltiptext {
+			  visibility: hidden;
+			  background-color: #073042;
+			  color: #fff;
+			  text-align: center;
+			  border-radius: 12px;
+			  padding: 12px 0;
+			  width: 200px;
+			  /* Position the tooltip */
+			  position: absolute;
+			  z-index: 1;
+			}
+			#landing .isometric #pin .branding:hover .tooltiptext {
+			  visibility: visible;
+			}
+
+		/* PIN ECONOMY */
+			#landing .isometric #pin .economy {
+				margin: 12rem 0 0 2rem;
+				cursor: pointer;
+			}
+			#landing .isometric #pin .economy {
+			  position: absolute;
+			  display: inline-block;
+			}
+			#landing .isometric #pin .economy .tooltiptext {
+			  visibility: hidden;
+			  background-color: #073042;
+			  color: #fff;
+			  text-align: center;
+			  border-radius: 12px;
+			  padding: 12px 0;
+			  width: 200px;
+			  /* Position the tooltip */
+			  position: absolute;
+			  z-index: 1;
+			}
+			#landing .isometric #pin .economy:hover .tooltiptext {
+			  visibility: visible;
+			}
+
+		/* PIN LIVING */
+			#landing .isometric #pin .living {
+				margin: 4rem 0 0 7rem;
+				cursor: pointer;
+			}
+			#landing .isometric #pin .living {
+			  position: absolute;
+			  display: inline-block;
+			}
+			#landing .isometric #pin .living .tooltiptext {
+			  visibility: hidden;
+			  background-color: #073042;
+			  color: #fff;
+			  text-align: center;
+			  border-radius: 12px;
+			  padding: 12px 0;
+			  width: 200px;
+			  /* Position the tooltip */
+			  position: absolute;
+			  z-index: 1;
+ 				right: 105%;
+			}
+			#landing .isometric #pin .living:hover .tooltiptext {
+			  visibility: visible;
+			}
+
+		/* PIN SOCIETY */
+			#landing .isometric #pin .society {
+				margin: 17rem 0 0 6rem;
+				cursor: pointer;
+			}
+			#landing .isometric #pin .society {
+			  position: absolute;
+			  display: inline-block;
+			}
+			#landing .isometric #pin .society .tooltiptext {
+			  visibility: hidden;
+			  background-color: #073042;
+			  color: #fff;
+			  text-align: center;
+			  border-radius: 12px;
+			  padding: 12px 0;
+			  width: 200px;
+			  /* Position the tooltip */
+			  position: absolute;
+			  z-index: 1;
+			}
+			#landing .isometric #pin .society:hover .tooltiptext {
+			  visibility: visible;
+			}
+
+		/* PIN ENVIRONMENT */
+			#landing .isometric #pin .environment {
+				margin: 19rem 0 0 20rem;
+				cursor: pointer;
+			}
+			#landing .isometric #pin .environment {
+			  position: absolute;
+			  display: inline-block;
+			}
+			#landing .isometric #pin .environment .tooltiptext {
+			  visibility: hidden;
+			  background-color: #073042;
+			  color: #fff;
+			  text-align: center;
+			  border-radius: 12px;
+			  padding: 12px 0;
+			  width: 200px;
+			  /* Position the tooltip */
+			  position: absolute;
+			  z-index: 1;
+			}
+			#landing .isometric #pin .environment:hover .tooltiptext {
+			  visibility: visible;
+			}
+
+/* MASUKAN MASYARAKAT*/
+
+	#masukan .wrapper {
+		color: #fff;
+		border-radius: 10px;
+		border: none;
+		background: linear-gradient(-120deg, #00e3fd, #4285f4);
+		-webkit-box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.5);
+		box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.5);
+	}
+
+	#masukan .wrapper .title {
+		font-size: 22px;
+	}
+	#masukan .wrapper .subtitle {
+		font-size: 12px;
+	}
+
+	#masukan .carousel-control-prev {
+    left: 0;
+		background-color: rgba(0, 0, 0, .40);
+		margin: 80px 80px;
+    border-radius: 50%;
+    width: 45px;
+	}
+
+	#masukan .carousel-control-next {
+    right: 0;
+		background-color: rgba(0, 0, 0, .40);
+    margin: 80px 80px;
+    border-radius: 50%;
+    width: 45px;
+	}
 
 /* ABOUT */
 	#about {
-		padding: 80px 0;
-		background-color: #e9ecef;
+		padding: 0 0 80px;
 	}
-	#about .video {
-		margin-top: -200px;
+	#about .video-wrapper {
+		margin-top: 60px;
 	}
-	#about .video iframe {
+	#about .video-wrapper iframe {
 		top: 0;
 		left: 0;
 		border: 0;
-		width: 100%;
-		height: 512px;
-		border-radius: 40px;
+		width: 80%;
+		height: 360px;
+		border-radius: 20px;
 		background-color: #000;
 		opacity: .3;
 	}
 
 /* SMART CITY CATS */
 	#smart-city {
-		padding: 80px 0;
+		padding: 80px 0 0;
 	}
 	#smart-city .card-custom {
 		padding: 40px 60px;
 		border-radius: 30px;
-		background: linear-gradient(-120deg, #00e3fd, #007bf6);
+		background: linear-gradient(-120deg, #00e3fd, #4285f4);
 		-webkit-box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.5);
 		box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.5);
 		color: #fff;
@@ -313,12 +523,22 @@ body {
 		text-align: left;
 	}
 	#smart-city .card-custom .info {
-		padding: 20px 0 0;
+		padding: 15px 0 0;
+		width: 100%;
+	}
+	#smart-city .card-custom .info span {
+		width: 8px;
+		height: 8px;
+		display: inline-block;
+		background-color: rgb(255,255,255);
+		opacity: .7;
+		border-radius: 50%;
+		margin-right: 10px;
 	}
 
 /* PARTNERS */
 	#partners {
-		padding: 80px 0 0;
+		padding: 80px 0 40px;
 		background-color: #e9ecef;
 	}
 	#partners .border {
@@ -347,29 +567,46 @@ body {
 		}
 		#update .card-update .new {
 			text-transform: uppercase;
-			text-align: left;
-			padding: 12px 0;
+			padding: 0 0 12px;
 			color: rgb(108, 117, 125);
 			font-weight: bold;
 		}
 		#update .card-update .title {
 			width: 100%;
-			font-size: 32px;
+			font-size: 30px;
 			font-weight: 700;
-			text-align: left;
-			line-height: 1.2;
+			line-height: 1.1;
 		}
 		#update .card-update .date {
 			margin-top: 8px;
 			font-size: 14px;
 			font-weight: 700;
-			text-align: left;
 			color: rgb(108, 117, 125);
 		}
-		#update .card-update .info {
-			padding: 20px 0 0;
-			text-align: left;
+		#update .card-update .uploaded {
 			font-size: 14px;
+			color: rgb(108, 117, 125);
+		} 
+		#update .card-update .info {
+			margin-top: 8px;
+			font-size: 14px;
+		}
+		#update .card-update .update-btn a {
+			width: auto;
+			color: #fff;
+			margin: 26px 0 0;
+			padding: 12px 24px;
+			border-radius: 40px;
+			border: none;
+			font-size: 16px;
+			font-weight: bold;
+			background-color: rgb(66,133,244);
+			transition: .3s;
+		}
+		#update .card-update .update-btn a:hover {
+			transform: translateY(3px);
+			background-color: rgb(7,48,66);
+			color: rgb(214,240,255);
 		}
 	/* SECOND CARDS */
 		#update .card-update-second {
@@ -380,7 +617,7 @@ body {
 			border-radius: 30px;
 		}
 		#update .card-update-second .picture {
-			width: 50%;
+			width: 60%;
 			margin: auto;
 		}
 		#update .card-update-second img {
@@ -391,10 +628,9 @@ body {
 			width: 50%;
 			padding: 0 0 0 20px;
 		}
-
 		#update .card-update-second .title {
 			width: 100%;
-			font-size: 20px;
+			font-size: 22px;
 			font-weight: 700;
 			text-align: left;
 			line-height: 1.2;
@@ -414,22 +650,36 @@ body {
 		#update .card-update-second .btn-wrapper {
 			height: 100%;
 		}
+		#update .card-update-second .second-more {
+			font-size: 14px;
+			text-decoration: none;
+	    color: #4285f4;
+	    transition: .3s;
+		}
+		#update .card-update-second .second-more:hover {
+	    color: rgb(108, 117, 125);
+			transform: translateX(3px);
+		}
 	/* MORE */
 		#update .more-card-wrapper {
 			height: 100%;
 		}
 		#update .more-card {
-			width: 55%;
-			padding: 15px 20px;
-			background: #fff;
-			-webkit-box-shadow: 0px 15px 40px -5px rgba(0, 0, 0, 0.1);
-			box-shadow: 0px 15px 40px -5px rgba(0, 0, 0, 0.1);
-			border-radius: 40px;
+			width: auto;
 		}
-		#update .more-card .btn-more-wrapper {
+		#update .more-card a {
 			width: 100%;
+			color: rgb(108, 117, 125);
+			padding: 12px 24px;
+			font-size: 14px;
+			font-weight: bold;
+			transition: .3s;
+			text-decoration: none;
 		}
-
+		#update .more-card a:hover {
+			transform: translateX(5px);
+			color: #000;
+		}
 
 /* MEDIA QUERIES */
 
@@ -471,7 +721,6 @@ body {
 					font-size: 14px;
 					width: 70%;
 				}
-		
 		/* ABOUT */
 			#about {
 				padding: 80px 0 0;
@@ -483,7 +732,6 @@ body {
 			#about .video iframe {			
 				height: 240px;
 			}
-		
 		/* PARTNERS */
 			#partners {
 				padding: 40px 0;
@@ -491,13 +739,12 @@ body {
 			#partners img {
 				width: 80%;
 			}
-
 		/* UPDATE */
 			#update .card-update {
-				padding: 20px 40px;
+				padding: 40px;
 			}
 			#update .card-update .new {
-				font-size: 12px;
+				font-size: 14px;
 			}
 			#update .card-update .date {
 				font-size: 12px;
@@ -530,7 +777,6 @@ body {
 				#update .more-card {
 					padding: 10px 15px;
 				}
-
 		/* GLOBAL HEADING */
 			h2 {
 				font-size: 32px;
@@ -572,9 +818,50 @@ body {
 					padding: 10px 22px;
 					font-size: 10px;
 				}
-
-				
-
+	
+		/* PIN */
+			/* PIN GOVERNANCE */
+				#landing .isometric #pin .gov {
+					margin: 9rem 0 0 24rem;
+				}
+				#landing .isometric #pin .gov img {
+					width: 25px;
+				}
+			/* PIN BRANDING */
+				#landing .isometric #pin .branding {
+					margin: 5rem 0 0 11rem;
+				}
+				#landing .isometric #pin .branding img {
+					width: 25px;
+				}
+			/* PIN ECONOMY */
+				#landing .isometric #pin .economy {
+					margin: 10rem 0 0 2rem;
+				}
+				#landing .isometric #pin .economy img {
+					width: 25px;
+				}
+			/* PIN LIVING */
+				#landing .isometric #pin .living {
+					margin: 4rem 0 0 6rem;
+				}
+				#landing .isometric #pin .living img {
+					width: 25px;
+				}
+			/* PIN SOCIETY */
+				#landing .isometric #pin .society {
+					margin: 14rem 0 0 6rem;
+				}
+				#landing .isometric #pin .society img {
+					width: 25px;
+				}
+			/* PIN ENVIRONMENT */
+				#landing .isometric #pin .environment {
+					margin: 16rem 0 0 15rem;
+				}
+				#landing .isometric #pin .environment img {
+					width: 25px;
+				}
 	}
 
 	/* Small devices (landscape phones, 576px and up)*/
@@ -591,11 +878,9 @@ body {
 			#landing {
 				padding: 0;
 			}
-			#landing .isometric #pin {
-				margin: 9px 9px;
-			}
 			#landing .isometric .bg-isometric {
-				height: 60%;
+				margin-top: 5rem;
+				height: 50%;
 			}
 			/* SLOGAN */
 				#landing .slogan {
@@ -608,7 +893,6 @@ body {
 				#landing .slogan p {
 					font-size: 12px;
 				}
-		
 		/* ABOUT */
 			#about {
 				padding: 80px 0 0;
@@ -620,7 +904,6 @@ body {
 			#about .video iframe {			
 				height: 320px;
 			}
-		
 		/* PARTNERS */
 			#partners {
 				padding: 40px 0;
@@ -628,12 +911,10 @@ body {
 			#partners img {
 				width: 80%;
 			}
-
 		/* UPDATE */
 			#update .second-col-card {
 				padding: 1.5rem 0;
 			}
-
 		/* GLOBAL HEADING */
 			h2 {
 				font-size: 32px;
@@ -657,8 +938,49 @@ body {
 					padding: 10px 18px;
 					font-size: 14px;
 				}
+		
+		/* PIN */
+			/* PIN GOVERNANCE */
+				#landing .isometric #pin .gov {
+					margin: 11rem 0 0 17rem;
+				}
+				#landing .isometric #pin .gov img {
+					width: 20px;
+				}
+			/* PIN BRANDING */
+				#landing .isometric #pin .branding {
+					margin: 8rem 0 0 8rem;
+				}
+				#landing .isometric #pin .branding img {
+					width: 20px;
+				}
+			/* PIN ECONOMY */
+				#landing .isometric #pin .economy img {
+					width: 20px;
+				}
+			/* PIN LIVING */
+				#landing .isometric #pin .living {
+					margin: 7rem 0 0 4rem;
+				}
+				#landing .isometric #pin .living img {
+					width: 20px;
+				}
+			/* PIN SOCIETY */
+				#landing .isometric #pin .society {
+					margin: 15rem 0 0 4rem;
+				}
+				#landing .isometric #pin .society img {
+					width: 20px;
+				}
+			/* PIN ENVIRONMENT */
+				#landing .isometric #pin .environment {
+					margin: 17rem 0 0 12rem;
+				}
+				#landing .isometric #pin .environment img {
+					width: 20px;
+				}
 	}
-
+	
 	/* Medium devices (tablets, 768px and up)*/
 	@media (min-width: 768px) and (max-width: 991.98px) {
 		/* LANDING */
@@ -689,7 +1011,6 @@ body {
 				#landing .slogan p {
 					font-size: 16px;
 				}
-		
 		/* ABOUT */
 			#about {
 				padding: 80px 0 0;
@@ -701,7 +1022,6 @@ body {
 			#about .video iframe {			
 				height: 320px;
 			}
-		
 		/* PARTNERS */
 			#partners {
 				padding: 40px 0;
@@ -709,17 +1029,14 @@ body {
 			#partners img {
 				width: 80%;
 			}
-
 		/* UPDATE */
 			#update .second-col-card {
 				padding: 1.5rem 0;
 			}
-
 		/* SMART CITY CATS */
 			#smart-city .card-custom {
 				padding: 40px 40px;
 			}
-
 		/* GLOBAL HEADING */
 			h2 {
 				font-size: 32px;
@@ -727,27 +1044,71 @@ body {
 			h5 {
 				font-size: 16px;
 			}
-	}
 
+		/* PIN */
+			/* PIN GOV */
+				#landing .isometric #pin .gov {
+					margin: 5rem 0 0 17rem;
+				}
+				#landing .isometric #pin .gov img {
+					width: 25px;
+				}
+			/* PIN BRANDING */
+				#landing .isometric #pin .branding {
+					margin: 3rem 0 0 8rem;
+				}
+				#landing .isometric #pin .branding img {
+					width: 25px;
+				}
+			/* PIN ECONOMY */
+				#landing .isometric #pin .economy {
+					margin: 6rem 0 0 1rem;
+				}
+				#landing .isometric #pin .economy img {
+					width: 25px;
+				}
+			/* PIN LIVING */
+				#landing .isometric #pin .living {
+					margin: 1rem 0 0 4rem;
+				}
+				#landing .isometric #pin .living img {
+					width: 25px;
+				}
+			/* PIN SOCIETY */
+				#landing .isometric #pin .society {
+					margin: 9rem 0 0 4rem;
+				}
+				#landing .isometric #pin .society img {
+					width: 25px;
+				}
+			/* PIN ENVIRONMENT */
+				#landing .isometric #pin .environment {
+					margin: 11rem 0 0 12rem;
+				}
+				#landing .isometric #pin .environment img {
+					width: 25px;
+				}
+	}
+	
 	/*Large devices (desktops, 992px and up)*/
 	@media (min-width: 992px) and (max-width: 1199.98px) {
 		/* SMART CITY CATS */
-		#smart-city .card-custom {
-			padding: 40px 40px;
-		}
+			#smart-city .card-custom {
+				padding: 40px 40px;
+			}
 
-		#smart-city .card-custom .info {
-	    font-size: 14px;
-		}
+			#smart-city .card-custom .info {
+		    font-size: 14px;
+			}
 
-		#smart-city .card-custom .title {
-		  width: 25%;
-			line-height: 1.2;
-			text-transform: uppercase;
-			font-size: 28px;
-			font-weight: 700;
-			text-align: left;
-		}
+			#smart-city .card-custom .title {
+			  width: 25%;
+				line-height: 1.2;
+				text-transform: uppercase;
+				font-size: 28px;
+				font-weight: 700;
+				text-align: left;
+			}
 	}
 
 
