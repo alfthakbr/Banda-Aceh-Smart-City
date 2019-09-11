@@ -497,6 +497,21 @@ body {
 		opacity: .3;
 	}
 
+/* LAYANAN */
+	#layanan {
+		padding: 80px 0;
+	}
+	#layanan .border {
+		border: 2px solid black;
+		width: 20%;
+	}
+	#layanan img {
+		width: 55%;
+	}
+	#layanan .layanan  {
+		width: 55%;
+	}
+
 /* SMART CITY CATS */
 	#smart-city {
 		padding: 80px 0 0;
